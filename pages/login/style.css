@@ -1,0 +1,21 @@
+.login-container {
+    padding: 5px;
+}
+
+.login-container .cx-de-login {
+    border: 1px solid var(--conteudo);
+    border-radius: 10px;
+    max-width: 350px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.login-container .cx-de-login div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container .cx-de-login h2  {
+    text-align: center;
+}

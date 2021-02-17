@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Nome do App</title>
+</head>
+
+<body>
+    <div class="menu-flutuante">
+        <div class="cabecalho-menu">
+            <div> </div>
+            <button onclick="
+                document.getElementsByClassName('menu-flutuante')[0].style.visibility = 'hidden';
+                document.getElementsByClassName('menu-flutuante')[0].style.height = '0px';
+                document.getElementsByClassName('logo-img')[0].style.position = 'relative';
+                "> X </button>
+        </div>
+        <div class="corpo-menu">
+            <a class="menu-item" href="#"> HOME </a>
+            <a class="menu-item" href="#"> QUEM SOMOS </a>
+            <a class="menu-item" href="#"> TRABALHE CONOSCO </a>
+        </div>
+    </div>
+
+    <div class="cabecalho-container">
+        <div class="direita-container">
+            <a href="#" onclick="
+                document.getElementsByClassName('menu-flutuante')[0].style.visibility = 'visible';
+                document.getElementsByClassName('menu-flutuante')[0].style.height = '100%';
+                document.getElementsByClassName('logo-img')[0].style.position = 'fixed';
+                document.getElementsByClassName('logo-img')[0].style.top = 1;
+            "><img class="logo-img" src="Imagens/logo.png" /></a>
+        </div>
+
+        <div class="centro-container">
+            <input type="text" placeholder="Buscar" />
+            <button> <img src="Imagens/lupa2.png" /> </button>
+        </div>
+
+        <div class="esquerda-container">
+            <button class="notificacao"><img class="sino" src="Imagens/sino.png"></button>
+            <a href="pages/login/index.html"><input type="button" value="Login"></a>
+        </div>
+
+    </div>
+
+    <div class="corpo">
+
+        <div class="timeline-container">
+            <div class="post-container">
+                <textarea class="post-container" cols="50" rows="5" placeholder="Escreva aqui!!"> </textarea>
+                <div class="button-container">
+                    <input class="button-post" type="button" value="Enviar">
+                </div>
+            </div>
+
+            <div class="posts-container">
+
+                <div class="card-post">
+                    <div class="card-header">
+                        <img src="Imagens/Pedro.jpg">
+                        <p> Pedro Rodrigues </p>
+                    </div>
+                    <div class="card-body">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum mauris vel
+                            metus ullamcorper imperdiet. Sed sit amet metus arcu. Phasellus purus augue, consectetur sed
+                            vulputate vitae, consectetur quis felis. Vestibulum mauris quam, viverra in nisi sed,
+                            placerat hendrerit risus. Pellentesque molestie malesuada lorem, sit amet cursus nunc dictum
+                            non. Nunc finibus eros sed elit malesuada, eu aliquet lacus tempor. Donec mi diam, ultricies
+                            in congue vel, lacinia a nunc. </p>
+                    </div>
+                    <div class="interaction-card-post">
+                        <button class="button-like"><img src="Imagens/like.png"></button>
+                    </div>
+                </div>
+
+                <div class="card-post">
+                    <div class="card-header">
+                        <img src="Imagens/Pedro.jpg">
+                        <p> Pedro Rodrigues </p>
+                    </div>
+                    <div class="card-body">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum mauris vel
+                            metus ullamcorper imperdiet. Sed sit amet metus arcu. Phasellus purus augue, consectetur sed
+                            vulputate vitae, consectetur quis felis. Vestibulum mauris quam, viverra in nisi sed,
+                            placerat hendrerit risus. Pellentesque molestie malesuada lorem, sit amet cursus nunc dictum
+                            non. Nunc finibus eros sed elit malesuada, eu aliquet lacus tempor. Donec mi diam, ultricies
+                            in congue vel, lacinia a nunc. </p>
+                    </div>
+                    <div class="interaction-card-post">
+                        <button class="button-like"><img src="Imagens/like.png"></button>
+                    </div>
+                </div>
+
+                <div class="card-post">
+                    <div class="card-header">
+                        <img src="Imagens/Pedro.jpg">
+                        <p> Pedro Rodrigues </p>
+                    </div>
+                    <div class="card-body">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum mauris vel
+                            metus ullamcorper imperdiet. Sed sit amet metus arcu. Phasellus purus augue, consectetur sed
+                            vulputate vitae, consectetur quis felis. Vestibulum mauris quam, viverra in nisi sed,
+                            placerat hendrerit risus. Pellentesque molestie malesuada lorem, sit amet cursus nunc dictum
+                            non. Nunc finibus eros sed elit malesuada, eu aliquet lacus tempor. Donec mi diam, ultricies
+                            in congue vel, lacinia a nunc. </p>
+                    </div>
+                    <div class="interaction-card-post">
+                        <button class="button-like"><img src="Imagens/like.png"></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="info-container">
+            <div class="profile-container">
+                <img src="Imagens/Pedro.jpg">
+                <h4>Pedro Rodrigues</h4>
+                <div class="seguir-mais">
+                    <button onclick="changecolor" id="buttonseguir">
+                        Seguir
+                    </button>
+                    <button id="more" value="mais">
+                        <img class="img-mais" src="Imagens/RV.png">
+                    </button>
+                </div>
+
+
+                <div class="description">
+                    <h5> Descrição do Player </h5>
+                    <textarea class="description-content" cols="30" rows="8"
+                        placeholder="Descrição do Player"></textarea>
+                    <div class="button-save"><input class="buton-save" type="button" value="Salvar" maxlength="125">
+                    </div>
+                </div>
+                <div class="gif">
+                    <img src="Imagens/giphy.gif">
+                    <img src="Imagens/giphy (1).gif">
+                </div>
+            </div>
+
+            <!--O comentario a baixo e para uma tentativa futura de adicionar comentarios no perfil.-->
+            <!--<div class="coment-container">
+                    <img src="Imagens/leao.jpg">
+                    <h4>Leozin123</h4>
+                    <p>Comentariossadsadsadsadsad</p>
+                </div>-->
+
+        </div>
+    </div>
+</body>
+
+</html>
