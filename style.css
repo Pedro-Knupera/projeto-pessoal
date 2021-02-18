@@ -310,14 +310,16 @@ body {
 .menu-flutuante .cabecalho-menu button {
     width: auto;
 }
-
 .menu-flutuante .corpo-menu {
     display: flex;
     flex-direction: column;
     padding-top: 70px;
     text-align: center;
 }
-
+.menu-flutuante .corpo-menu hr{
+    width: 100%;
+    border: 1px solid var(--fundo);
+}
 .menu-flutuante .corpo-menu a {
     margin-top: 15px;
     cursor: pointer;
