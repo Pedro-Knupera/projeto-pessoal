@@ -292,6 +292,7 @@ body {
 .corpo .info-container .profile-container .gif img:hover{
     transform: scale(1.005);
 }
+/*MENU-FLUTUANTE*/
 .menu-flutuante {
     position: fixed;
     width: 250px;

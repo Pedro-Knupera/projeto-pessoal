@@ -5,15 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="functions.js"></script>
     <title>Solicitações</title>
 </head>
 
 <body>
-
-    <div>
-        
+    <div class="menu-flutuante">
+        <div class="cabecalho-menu">
+            <div> </div>
+            <button onclick="HideMenu()"> X </button>
+        </div>
+        <div class="corpo-menu">
+            <hr>
+            <a class="menu-item" href="#"> Pagina Inicial </a>
+            <hr>
+            <a class="menu-item" href="pages/Solicitações/index.html"> Solicitações de Duos/Time </a>
+            <hr>
+            <a class="menu-item" href="#"> TRABALHE CONOSCO </a>
+            <hr>
+        </div>
     </div>
-    
 
+    <div class="cabecalho-container">
+        <div class="direita-container">
+            <a href="#" onclick="
+                document.getElementsByClassName('menu-flutuante')[0].style.visibility = 'visible';
+                document.getElementsByClassName('menu-flutuante')[0].style.height = '100%';
+                document.getElementsByClassName('logo-img')[0].style.position = 'fixed';
+                document.getElementsByClassName('logo-img')[0].style.top = 1;
+            "><img class="logo-img" src="Imagens/logo.png" /></a>
+        </div>
+
+        <div class="centro-container">
+            <input type="text" placeholder="Buscar" />
+            <button> <img src="Imagens/lupa2.png" /> </button>
+        </div>
+
+        <div class="esquerda-container">
+            <button class="notificacao"><img class="sino" src="Imagens/sino.png"></button>
+            <a href="pages/login/index.html"><input type="button" value="Login"></a>
+        </div>
+
+    </div>
 </body>
 </html>

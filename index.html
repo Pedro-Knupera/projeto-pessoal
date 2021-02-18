@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="functions.js"></script>
     <title>Nome do App</title>
 </head>
 
@@ -14,11 +14,7 @@
     <div class="menu-flutuante">
         <div class="cabecalho-menu">
             <div> </div>
-            <button onclick="
-                document.getElementsByClassName('menu-flutuante')[0].style.visibility = 'hidden';
-                document.getElementsByClassName('menu-flutuante')[0].style.height = '0px';
-                document.getElementsByClassName('logo-img')[0].style.position = 'relative';
-                "> X </button>
+            <button onclick="HideMenu()"> X </button>
         </div>
         <div class="corpo-menu">
             <hr>
