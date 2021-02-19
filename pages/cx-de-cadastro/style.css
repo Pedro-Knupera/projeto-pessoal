@@ -1,0 +1,29 @@
+.cx-de-cadastro{
+    margin: auto;
+    width: 350px;
+    align-items: center;
+    border: 2px solid var(--conteudo);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+
+}
+
+.cx-de-cadastro #BtSubmit{
+    max-width: 40px;
+    height:40px;
+    align-items: center;
+    margin: auto;
+    margin-left: 140px;
+}
+
+.cx-de-cadastro .separador-de-idades{
+    margin: auto;
+    display: flex;
+    padding: 10px;
+
+    }
+
+.cx-de-cadastro .separador-de-idades #Separador-de-idade #idade{
+    empty-cells: show;
+}

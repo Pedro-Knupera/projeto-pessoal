@@ -3,7 +3,7 @@
     --conteudo: #EAECEE;
     --tema: #7a3896;
 }
-#buscar {
+input {
     width: 94%;
     margin: 5px;
     padding: 5px;
@@ -13,7 +13,7 @@
     font-weight: bold;
     color: var(--fundo);
 }
-#buscar:focus {
+input:focus {
     outline: none;
 }
 button {
